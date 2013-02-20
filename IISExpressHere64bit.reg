@@ -1,7 +1,13 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\IISExpress]
-@="IIS Express Website Here"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\IISExpressCLR2.0]
+@="IIS Express Website Here (CLR v2.0)"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\IISExpress\command]
-@="cmd /c start /D\"C:\\Program Files (x86)\\IIS Express\\\" iisexpress.exe /port:%%random%% /path:\"%1\""
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\IISExpressCLR2.0\command]
+@="cmd /c start /D\"C:\\Program Files (x86)\\IIS Express\\\" iisexpress.exe /clr:v2.0 /port:%%random%% /path:\"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\IISExpressCLR4.0]
+@="IIS Express Website Here (CLR v4.0)"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\IISExpressCLR4.0\command]
+@="cmd /c start /D\"C:\\Program Files (x86)\\IIS Express\\\" iisexpress.exe /clr:v4.0 /port:%%random%% /path:\"%1\""
